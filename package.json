@@ -1,0 +1,70 @@
+{
+  "name": "redux-custom-middlewares",
+  "version": "0.1.0",
+  "description": "middlewares inside your FSA actions",
+  "main": "./dist/redux-custom-middlewares.js",
+  "scripts": {
+    "build": "babel src --out-dir dist --ignore '*.spec.js'",
+    "clean": "rimraf ./dist",
+    "test": "npm run -s test:all",
+    "test:all": "node scripts/test.js",
+    "test:basic": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch --coverage",
+    "preversion": "npm run -s test:all",
+    "prepare": "npm run -s test:all",
+    "lint": "eslint --max-warnings 0 src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guillaumearm/redux-custom-middlewares.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "custom",
+    "middlewares",
+    "actions",
+    "fsa"
+  ],
+  "author": "Guillaume ARM <garm@student.42.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guillaumearm/redux-custom-middlewares/issues"
+  },
+  "homepage": "https://github.com/guillaumearm/redux-custom-middlewares",
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/build/",
+      "/packages/"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-core": "^6.14.0",
+    "babel-eslint": "^6.1.2",
+    "babel-jest": "^17.0.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
+    "babel-polyfill": "^6.13.0",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.14.0",
+    "eslint": "^3.5.0",
+    "eslint-plugin-import": "^1.14.0",
+    "jest": "^17.0.2",
+    "ramda": "^0.22.1",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.1.0",
+    "rimraf": "^2.5.4",
+    "shelljs": "^0.7.4"
+  },
+  "peerDependencies": {
+    "redux": "^3.6.0"
+  }
+}
