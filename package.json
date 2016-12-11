@@ -2,7 +2,7 @@
   "name": "redux-custom-middlewares",
   "version": "1.0.1",
   "description": "middlewares inside your FSA actions",
-  "main": "./dist/redux-custom-middlewares.js",
+  "main": "./dist/index.js",
   "scripts": {
     "build": "babel src --out-dir dist --ignore '*.spec.js'",
     "clean": "rimraf ./dist",
