@@ -1,6 +1,6 @@
 {
   "name": "redux-custom-middlewares",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "middlewares inside your FSA actions",
   "main": "./dist/redux-custom-middlewares.js",
   "scripts": {
