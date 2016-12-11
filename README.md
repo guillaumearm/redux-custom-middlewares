@@ -15,7 +15,7 @@ it's like super [thunk](https://github.com/gaearon/redux-thunk) !
 ## Installation
 
 ```
-npm install --save guillaumearm/redux-custom-middlewares
+npm install --save redux-custom-middlewares
 ```
 
 ```js
